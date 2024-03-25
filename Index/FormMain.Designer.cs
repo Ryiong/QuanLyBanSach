@@ -265,6 +265,7 @@
             // btnBookDelete
             // 
             this.btnBookDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookDelete.BackgroundImage")));
+            this.btnBookDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBookDelete.FlatAppearance.BorderSize = 0;
             this.btnBookDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -280,6 +281,7 @@
             // btnBookChange
             // 
             this.btnBookChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookChange.BackgroundImage")));
+            this.btnBookChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBookChange.FlatAppearance.BorderSize = 0;
             this.btnBookChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,6 +297,7 @@
             // btnBookAdd
             // 
             this.btnBookAdd.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnBookAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBookAdd.FlatAppearance.BorderSize = 0;
             this.btnBookAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,6 +374,7 @@
             // btnBookTypeDelete
             // 
             this.btnBookTypeDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookTypeDelete.BackgroundImage")));
+            this.btnBookTypeDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBookTypeDelete.FlatAppearance.BorderSize = 0;
             this.btnBookTypeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookTypeDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -386,6 +390,7 @@
             // btnBookTypeChange
             // 
             this.btnBookTypeChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookTypeChange.BackgroundImage")));
+            this.btnBookTypeChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBookTypeChange.FlatAppearance.BorderSize = 0;
             this.btnBookTypeChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookTypeChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -401,6 +406,7 @@
             // btnBookTypeAdd
             // 
             this.btnBookTypeAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookTypeAdd.BackgroundImage")));
+            this.btnBookTypeAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBookTypeAdd.FlatAppearance.BorderSize = 0;
             this.btnBookTypeAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookTypeAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -459,6 +465,7 @@
             // btnBillDetail
             // 
             this.btnBillDetail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillDetail.BackgroundImage")));
+            this.btnBillDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBillDetail.FlatAppearance.BorderSize = 0;
             this.btnBillDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillDetail.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -540,6 +547,7 @@
             // btnBillDelete
             // 
             this.btnBillDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillDelete.BackgroundImage")));
+            this.btnBillDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBillDelete.FlatAppearance.BorderSize = 0;
             this.btnBillDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -555,6 +563,7 @@
             // btnBillChange
             // 
             this.btnBillChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillChange.BackgroundImage")));
+            this.btnBillChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBillChange.FlatAppearance.BorderSize = 0;
             this.btnBillChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -570,6 +579,7 @@
             // btnBillAdd
             // 
             this.btnBillAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillAdd.BackgroundImage")));
+            this.btnBillAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBillAdd.FlatAppearance.BorderSize = 0;
             this.btnBillAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -626,6 +636,7 @@
             // btnImportDetail
             // 
             this.btnImportDetail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportDetail.BackgroundImage")));
+            this.btnImportDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportDetail.FlatAppearance.BorderSize = 0;
             this.btnImportDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportDetail.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -683,6 +694,7 @@
             // btnImportDelete
             // 
             this.btnImportDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportDelete.BackgroundImage")));
+            this.btnImportDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportDelete.FlatAppearance.BorderSize = 0;
             this.btnImportDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -698,6 +710,7 @@
             // btnImportChange
             // 
             this.btnImportChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportChange.BackgroundImage")));
+            this.btnImportChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportChange.FlatAppearance.BorderSize = 0;
             this.btnImportChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -713,6 +726,7 @@
             // btnImportAdd
             // 
             this.btnImportAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportAdd.BackgroundImage")));
+            this.btnImportAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportAdd.FlatAppearance.BorderSize = 0;
             this.btnImportAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

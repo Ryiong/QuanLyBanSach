@@ -43,10 +43,12 @@ namespace Index
             this.numBookQuantity = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetailImport)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPriceImport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBookQuantity)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgDetailImport
@@ -76,7 +78,7 @@ namespace Index
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.totalPriceImport);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.cbBook);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
@@ -96,7 +98,7 @@ namespace Index
             this.totalPriceImport.AutoSize = true;
             this.totalPriceImport.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalPriceImport.ForeColor = System.Drawing.Color.White;
-            this.totalPriceImport.Location = new System.Drawing.Point(631, 90);
+            this.totalPriceImport.Location = new System.Drawing.Point(18, 9);
             this.totalPriceImport.Name = "totalPriceImport";
             this.totalPriceImport.Size = new System.Drawing.Size(163, 35);
             this.totalPriceImport.TabIndex = 10;
@@ -115,6 +117,7 @@ namespace Index
             // btnDelete
             // 
             this.btnDelete.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +133,7 @@ namespace Index
             // btnAdd
             // 
             this.btnAdd.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,6 +149,7 @@ namespace Index
             // btnChange
             // 
             this.btnChange.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnChange.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChange.FlatAppearance.BorderSize = 0;
             this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,6 +221,15 @@ namespace Index
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên sách";
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Index.Properties.Resources.label1;
+            this.panel2.Controls.Add(this.totalPriceImport);
+            this.panel2.Location = new System.Drawing.Point(552, 75);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(385, 54);
+            this.panel2.TabIndex = 11;
+            // 
             // FormDetailImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -233,6 +247,8 @@ namespace Index
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPriceImport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBookQuantity)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +269,6 @@ namespace Index
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label totalPriceImport;
         private System.Windows.Forms.ComboBox cbBook;
+        private Panel panel2;
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetailBill));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.totalPriceBill = new System.Windows.Forms.Label();
             this.cbBook = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.titleBill = new System.Windows.Forms.Label();
             this.dgDetailBill = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBookQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetailBill)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.totalPriceBill);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.cbBook);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
@@ -61,16 +63,26 @@
             this.panel1.Size = new System.Drawing.Size(1474, 211);
             this.panel1.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Index.Properties.Resources.label1;
+            this.panel2.Controls.Add(this.totalPriceBill);
+            this.panel2.Location = new System.Drawing.Point(1037, 17);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(385, 54);
+            this.panel2.TabIndex = 11;
+            // 
             // totalPriceBill
             // 
             this.totalPriceBill.AutoSize = true;
             this.totalPriceBill.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalPriceBill.ForeColor = System.Drawing.Color.White;
-            this.totalPriceBill.Location = new System.Drawing.Point(1023, 27);
+            this.totalPriceBill.Location = new System.Drawing.Point(34, 10);
             this.totalPriceBill.Name = "totalPriceBill";
             this.totalPriceBill.Size = new System.Drawing.Size(163, 35);
             this.totalPriceBill.TabIndex = 10;
             this.totalPriceBill.Text = "Tổng số tiền: 0";
+            this.totalPriceBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbBook
             // 
@@ -85,6 +97,9 @@
             // btnDelete
             // 
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(867, 139);
@@ -94,12 +109,13 @@
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
             // btnAdd
             // 
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(431, 139);
@@ -109,12 +125,13 @@
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
             // btnChange
             // 
             this.btnChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChange.BackgroundImage")));
+            this.btnChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChange.FlatAppearance.BorderSize = 0;
+            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChange.ForeColor = System.Drawing.Color.White;
             this.btnChange.Location = new System.Drawing.Point(650, 139);
@@ -124,8 +141,6 @@
             this.btnChange.Text = "Sửa";
             this.btnChange.UseVisualStyleBackColor = true;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
-            this.btnChange.FlatAppearance.BorderSize = 0;
-            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
             // numBookQuantity
             // 
@@ -199,6 +214,8 @@
             this.Text = "FormDetailBill";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBookQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgDetailBill)).EndInit();
             this.ResumeLayout(false);
@@ -219,5 +236,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label titleBill;
         private System.Windows.Forms.DataGridView dgDetailBill;
+        private System.Windows.Forms.Panel panel2;
     }
 }
