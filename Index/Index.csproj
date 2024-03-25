@@ -104,6 +104,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+    <None Include="Resources\btn.jpg" />
     <Content Include="SQL file\CreateTable.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

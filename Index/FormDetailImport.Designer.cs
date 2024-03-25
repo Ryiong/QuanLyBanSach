@@ -1,4 +1,6 @@
-﻿namespace Index
+﻿using System.Windows.Forms;
+
+namespace Index
 {
     partial class FormDetailImport
     {
@@ -62,7 +64,9 @@
             // titleImport
             // 
             this.titleImport.AutoSize = true;
+            this.titleImport.BackColor = System.Drawing.Color.Transparent;
             this.titleImport.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleImport.ForeColor = System.Drawing.Color.White;
             this.titleImport.Location = new System.Drawing.Point(612, 18);
             this.titleImport.Name = "titleImport";
             this.titleImport.Size = new System.Drawing.Size(294, 43);
@@ -71,6 +75,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.totalPriceImport);
             this.panel1.Controls.Add(this.cbBook);
             this.panel1.Controls.Add(this.btnDelete);
@@ -90,6 +95,7 @@
             // 
             this.totalPriceImport.AutoSize = true;
             this.totalPriceImport.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalPriceImport.ForeColor = System.Drawing.Color.White;
             this.totalPriceImport.Location = new System.Drawing.Point(631, 90);
             this.totalPriceImport.Name = "totalPriceImport";
             this.totalPriceImport.Size = new System.Drawing.Size(163, 35);
@@ -108,21 +114,29 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(867, 155);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(180, 45);
+            this.btnDelete.Size = new System.Drawing.Size(182, 45);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(431, 155);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(180, 45);
+            this.btnAdd.Size = new System.Drawing.Size(182, 45);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -130,14 +144,18 @@
             // 
             // btnChange
             // 
-            this.btnChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChange.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnChange.FlatAppearance.BorderSize = 0;
+            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChange.ForeColor = System.Drawing.Color.White;
             this.btnChange.Location = new System.Drawing.Point(650, 155);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(180, 45);
+            this.btnChange.Size = new System.Drawing.Size(182, 45);
             this.btnChange.TabIndex = 6;
             this.btnChange.Text = "Sửa";
             this.btnChange.UseVisualStyleBackColor = true;
-            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
+            this.btnChange.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // numPriceImport
             // 
@@ -155,10 +173,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(983, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 35);
+            this.label4.Size = new System.Drawing.Size(104, 35);
             this.label4.TabIndex = 4;
             this.label4.Text = "Giá nhập";
             // 
@@ -178,17 +197,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(708, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 35);
+            this.label3.Size = new System.Drawing.Size(106, 35);
             this.label3.TabIndex = 2;
             this.label3.Text = "Số lượng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(15, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 35);
@@ -199,6 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Index.Properties.Resources.bg1;
             this.ClientSize = new System.Drawing.Size(1498, 834);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.titleImport);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.cTable = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,6 +56,7 @@
             this.dgBookType = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBillDetail = new System.Windows.Forms.Button();
             this.dateTimeMakeBill = new System.Windows.Forms.DateTimePicker();
             this.textBillNameCustomer = new System.Windows.Forms.TextBox();
             this.textPhoneCustomer = new System.Windows.Forms.TextBox();
@@ -76,7 +78,6 @@
             this.btnImportChange = new System.Windows.Forms.Button();
             this.btnImportAdd = new System.Windows.Forms.Button();
             this.dgImport = new System.Windows.Forms.DataGridView();
-            this.btnBillDetail = new System.Windows.Forms.Button();
             this.cTable.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -109,7 +110,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImage = global::Index.Properties.Resources.bg;
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.dgBook);
@@ -123,6 +124,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.numBookPrice);
             this.panel1.Controls.Add(this.numBookQuantity);
             this.panel1.Controls.Add(this.label5);
@@ -193,7 +195,7 @@
             // 
             // textBookAuthor
             // 
-            this.textBookAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.textBookAuthor.BackColor = System.Drawing.Color.White;
             this.textBookAuthor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBookAuthor.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBookAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
@@ -240,7 +242,6 @@
             // 
             // textBookNameBook
             // 
-            this.textBookNameBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.textBookNameBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBookNameBook.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBookNameBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
@@ -263,10 +264,14 @@
             // 
             // btnBookDelete
             // 
-            this.btnBookDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookDelete.Location = new System.Drawing.Point(1259, 145);
+            this.btnBookDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookDelete.BackgroundImage")));
+            this.btnBookDelete.FlatAppearance.BorderSize = 0;
+            this.btnBookDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookDelete.ForeColor = System.Drawing.Color.White;
+            this.btnBookDelete.Location = new System.Drawing.Point(1259, 154);
             this.btnBookDelete.Name = "btnBookDelete";
-            this.btnBookDelete.Size = new System.Drawing.Size(160, 51);
+            this.btnBookDelete.Size = new System.Drawing.Size(182, 45);
             this.btnBookDelete.TabIndex = 2;
             this.btnBookDelete.Text = "Xóa";
             this.btnBookDelete.UseVisualStyleBackColor = true;
@@ -274,10 +279,14 @@
             // 
             // btnBookChange
             // 
-            this.btnBookChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookChange.Location = new System.Drawing.Point(1259, 75);
+            this.btnBookChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookChange.BackgroundImage")));
+            this.btnBookChange.FlatAppearance.BorderSize = 0;
+            this.btnBookChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookChange.ForeColor = System.Drawing.Color.White;
+            this.btnBookChange.Location = new System.Drawing.Point(1259, 80);
             this.btnBookChange.Name = "btnBookChange";
-            this.btnBookChange.Size = new System.Drawing.Size(160, 51);
+            this.btnBookChange.Size = new System.Drawing.Size(182, 45);
             this.btnBookChange.TabIndex = 1;
             this.btnBookChange.Text = "Sửa";
             this.btnBookChange.UseVisualStyleBackColor = true;
@@ -285,10 +294,14 @@
             // 
             // btnBookAdd
             // 
+            this.btnBookAdd.BackgroundImage = global::Index.Properties.Resources.btn;
+            this.btnBookAdd.FlatAppearance.BorderSize = 0;
+            this.btnBookAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookAdd.ForeColor = System.Drawing.Color.White;
             this.btnBookAdd.Location = new System.Drawing.Point(1259, 3);
             this.btnBookAdd.Name = "btnBookAdd";
-            this.btnBookAdd.Size = new System.Drawing.Size(160, 51);
+            this.btnBookAdd.Size = new System.Drawing.Size(182, 45);
             this.btnBookAdd.TabIndex = 0;
             this.btnBookAdd.Text = "Thêm";
             this.btnBookAdd.UseVisualStyleBackColor = true;
@@ -334,7 +347,7 @@
             // 
             // textBookTypeNameBookType
             // 
-            this.textBookTypeNameBookType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.textBookTypeNameBookType.BackColor = System.Drawing.Color.White;
             this.textBookTypeNameBookType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBookTypeNameBookType.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBookTypeNameBookType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
@@ -357,10 +370,14 @@
             // 
             // btnBookTypeDelete
             // 
-            this.btnBookTypeDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTypeDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookTypeDelete.BackgroundImage")));
+            this.btnBookTypeDelete.FlatAppearance.BorderSize = 0;
+            this.btnBookTypeDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookTypeDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTypeDelete.ForeColor = System.Drawing.Color.White;
             this.btnBookTypeDelete.Location = new System.Drawing.Point(742, 120);
             this.btnBookTypeDelete.Name = "btnBookTypeDelete";
-            this.btnBookTypeDelete.Size = new System.Drawing.Size(160, 51);
+            this.btnBookTypeDelete.Size = new System.Drawing.Size(182, 45);
             this.btnBookTypeDelete.TabIndex = 2;
             this.btnBookTypeDelete.Text = "Xóa";
             this.btnBookTypeDelete.UseVisualStyleBackColor = true;
@@ -368,10 +385,14 @@
             // 
             // btnBookTypeChange
             // 
-            this.btnBookTypeChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTypeChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookTypeChange.BackgroundImage")));
+            this.btnBookTypeChange.FlatAppearance.BorderSize = 0;
+            this.btnBookTypeChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookTypeChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTypeChange.ForeColor = System.Drawing.Color.White;
             this.btnBookTypeChange.Location = new System.Drawing.Point(497, 120);
             this.btnBookTypeChange.Name = "btnBookTypeChange";
-            this.btnBookTypeChange.Size = new System.Drawing.Size(160, 51);
+            this.btnBookTypeChange.Size = new System.Drawing.Size(182, 45);
             this.btnBookTypeChange.TabIndex = 1;
             this.btnBookTypeChange.Text = "Sửa";
             this.btnBookTypeChange.UseVisualStyleBackColor = true;
@@ -379,10 +400,14 @@
             // 
             // btnBookTypeAdd
             // 
-            this.btnBookTypeAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTypeAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookTypeAdd.BackgroundImage")));
+            this.btnBookTypeAdd.FlatAppearance.BorderSize = 0;
+            this.btnBookTypeAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookTypeAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTypeAdd.ForeColor = System.Drawing.Color.White;
             this.btnBookTypeAdd.Location = new System.Drawing.Point(259, 120);
             this.btnBookTypeAdd.Name = "btnBookTypeAdd";
-            this.btnBookTypeAdd.Size = new System.Drawing.Size(160, 51);
+            this.btnBookTypeAdd.Size = new System.Drawing.Size(182, 45);
             this.btnBookTypeAdd.TabIndex = 0;
             this.btnBookTypeAdd.Text = "Thêm";
             this.btnBookTypeAdd.UseVisualStyleBackColor = true;
@@ -402,7 +427,8 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.BackgroundImage = global::Index.Properties.Resources.bg;
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.dgBill);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
@@ -430,16 +456,31 @@
             this.panel3.Size = new System.Drawing.Size(1616, 199);
             this.panel3.TabIndex = 3;
             // 
+            // btnBillDetail
+            // 
+            this.btnBillDetail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillDetail.BackgroundImage")));
+            this.btnBillDetail.FlatAppearance.BorderSize = 0;
+            this.btnBillDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBillDetail.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillDetail.ForeColor = System.Drawing.Color.White;
+            this.btnBillDetail.Location = new System.Drawing.Point(1003, 145);
+            this.btnBillDetail.Name = "btnBillDetail";
+            this.btnBillDetail.Size = new System.Drawing.Size(182, 45);
+            this.btnBillDetail.TabIndex = 12;
+            this.btnBillDetail.Text = "Chi tiết >>";
+            this.btnBillDetail.UseVisualStyleBackColor = true;
+            this.btnBillDetail.Click += new System.EventHandler(this.btnBillDetail_Click);
+            // 
             // dateTimeMakeBill
             // 
             this.dateTimeMakeBill.Location = new System.Drawing.Point(282, 11);
             this.dateTimeMakeBill.Name = "dateTimeMakeBill";
-            this.dateTimeMakeBill.Size = new System.Drawing.Size(394, 34);
+            this.dateTimeMakeBill.Size = new System.Drawing.Size(558, 34);
             this.dateTimeMakeBill.TabIndex = 11;
             // 
             // textBillNameCustomer
             // 
-            this.textBillNameCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.textBillNameCustomer.BackColor = System.Drawing.Color.White;
             this.textBillNameCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBillNameCustomer.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBillNameCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
@@ -450,7 +491,7 @@
             // 
             // textPhoneCustomer
             // 
-            this.textPhoneCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.textPhoneCustomer.BackColor = System.Drawing.Color.White;
             this.textPhoneCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textPhoneCustomer.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPhoneCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
@@ -498,10 +539,14 @@
             // 
             // btnBillDelete
             // 
+            this.btnBillDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillDelete.BackgroundImage")));
+            this.btnBillDelete.FlatAppearance.BorderSize = 0;
+            this.btnBillDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillDelete.ForeColor = System.Drawing.Color.White;
             this.btnBillDelete.Location = new System.Drawing.Point(750, 145);
             this.btnBillDelete.Name = "btnBillDelete";
-            this.btnBillDelete.Size = new System.Drawing.Size(160, 51);
+            this.btnBillDelete.Size = new System.Drawing.Size(182, 45);
             this.btnBillDelete.TabIndex = 2;
             this.btnBillDelete.Text = "Xóa";
             this.btnBillDelete.UseVisualStyleBackColor = true;
@@ -509,10 +554,14 @@
             // 
             // btnBillChange
             // 
+            this.btnBillChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillChange.BackgroundImage")));
+            this.btnBillChange.FlatAppearance.BorderSize = 0;
+            this.btnBillChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillChange.ForeColor = System.Drawing.Color.White;
             this.btnBillChange.Location = new System.Drawing.Point(505, 145);
             this.btnBillChange.Name = "btnBillChange";
-            this.btnBillChange.Size = new System.Drawing.Size(160, 51);
+            this.btnBillChange.Size = new System.Drawing.Size(182, 45);
             this.btnBillChange.TabIndex = 1;
             this.btnBillChange.Text = "Sửa";
             this.btnBillChange.UseVisualStyleBackColor = true;
@@ -520,10 +569,14 @@
             // 
             // btnBillAdd
             // 
+            this.btnBillAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBillAdd.BackgroundImage")));
+            this.btnBillAdd.FlatAppearance.BorderSize = 0;
+            this.btnBillAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBillAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillAdd.ForeColor = System.Drawing.Color.White;
             this.btnBillAdd.Location = new System.Drawing.Point(253, 145);
             this.btnBillAdd.Name = "btnBillAdd";
-            this.btnBillAdd.Size = new System.Drawing.Size(160, 51);
+            this.btnBillAdd.Size = new System.Drawing.Size(182, 45);
             this.btnBillAdd.TabIndex = 0;
             this.btnBillAdd.Text = "Thêm";
             this.btnBillAdd.UseVisualStyleBackColor = true;
@@ -543,7 +596,8 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.BackgroundImage = global::Index.Properties.Resources.bg;
             this.tabPage4.Controls.Add(this.panel4);
             this.tabPage4.Controls.Add(this.dgImport);
             this.tabPage4.Location = new System.Drawing.Point(4, 44);
@@ -571,10 +625,14 @@
             // 
             // btnImportDetail
             // 
+            this.btnImportDetail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportDetail.BackgroundImage")));
+            this.btnImportDetail.FlatAppearance.BorderSize = 0;
+            this.btnImportDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportDetail.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportDetail.ForeColor = System.Drawing.Color.White;
             this.btnImportDetail.Location = new System.Drawing.Point(1055, 122);
             this.btnImportDetail.Name = "btnImportDetail";
-            this.btnImportDetail.Size = new System.Drawing.Size(160, 51);
+            this.btnImportDetail.Size = new System.Drawing.Size(182, 45);
             this.btnImportDetail.TabIndex = 11;
             this.btnImportDetail.Text = "Chi tiết >>";
             this.btnImportDetail.UseVisualStyleBackColor = true;
@@ -582,14 +640,14 @@
             // 
             // dateTimeMakeImport
             // 
-            this.dateTimeMakeImport.Location = new System.Drawing.Point(311, 11);
+            this.dateTimeMakeImport.Location = new System.Drawing.Point(311, 7);
             this.dateTimeMakeImport.Name = "dateTimeMakeImport";
-            this.dateTimeMakeImport.Size = new System.Drawing.Size(398, 34);
+            this.dateTimeMakeImport.Size = new System.Drawing.Size(440, 34);
             this.dateTimeMakeImport.TabIndex = 10;
             // 
             // textImportNameProvider
             // 
-            this.textImportNameProvider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.textImportNameProvider.BackColor = System.Drawing.Color.White;
             this.textImportNameProvider.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textImportNameProvider.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textImportNameProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
@@ -624,10 +682,14 @@
             // 
             // btnImportDelete
             // 
+            this.btnImportDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportDelete.BackgroundImage")));
+            this.btnImportDelete.FlatAppearance.BorderSize = 0;
+            this.btnImportDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportDelete.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportDelete.ForeColor = System.Drawing.Color.White;
             this.btnImportDelete.Location = new System.Drawing.Point(837, 122);
             this.btnImportDelete.Name = "btnImportDelete";
-            this.btnImportDelete.Size = new System.Drawing.Size(160, 51);
+            this.btnImportDelete.Size = new System.Drawing.Size(182, 45);
             this.btnImportDelete.TabIndex = 2;
             this.btnImportDelete.Text = "Xóa";
             this.btnImportDelete.UseVisualStyleBackColor = true;
@@ -635,10 +697,14 @@
             // 
             // btnImportChange
             // 
+            this.btnImportChange.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportChange.BackgroundImage")));
+            this.btnImportChange.FlatAppearance.BorderSize = 0;
+            this.btnImportChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportChange.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportChange.ForeColor = System.Drawing.Color.White;
             this.btnImportChange.Location = new System.Drawing.Point(612, 122);
             this.btnImportChange.Name = "btnImportChange";
-            this.btnImportChange.Size = new System.Drawing.Size(160, 51);
+            this.btnImportChange.Size = new System.Drawing.Size(182, 45);
             this.btnImportChange.TabIndex = 1;
             this.btnImportChange.Text = "Sửa";
             this.btnImportChange.UseVisualStyleBackColor = true;
@@ -646,10 +712,14 @@
             // 
             // btnImportAdd
             // 
+            this.btnImportAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImportAdd.BackgroundImage")));
+            this.btnImportAdd.FlatAppearance.BorderSize = 0;
+            this.btnImportAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportAdd.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportAdd.ForeColor = System.Drawing.Color.White;
             this.btnImportAdd.Location = new System.Drawing.Point(393, 122);
             this.btnImportAdd.Name = "btnImportAdd";
-            this.btnImportAdd.Size = new System.Drawing.Size(160, 51);
+            this.btnImportAdd.Size = new System.Drawing.Size(182, 45);
             this.btnImportAdd.TabIndex = 0;
             this.btnImportAdd.Text = "Thêm";
             this.btnImportAdd.UseVisualStyleBackColor = true;
@@ -667,21 +737,11 @@
             this.dgImport.TabIndex = 2;
             this.dgImport.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgImport_CellClick);
             // 
-            // btnBillDetail
-            // 
-            this.btnBillDetail.Font = new System.Drawing.Font("Bricolage Grotesque 24pt SemiBo", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBillDetail.Location = new System.Drawing.Point(1003, 145);
-            this.btnBillDetail.Name = "btnBillDetail";
-            this.btnBillDetail.Size = new System.Drawing.Size(160, 51);
-            this.btnBillDetail.TabIndex = 12;
-            this.btnBillDetail.Text = "Chi tiết >>";
-            this.btnBillDetail.UseVisualStyleBackColor = true;
-            this.btnBillDetail.Click += new System.EventHandler(this.btnBillDetail_Click);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Index.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(1697, 923);
             this.Controls.Add(this.cTable);
             this.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

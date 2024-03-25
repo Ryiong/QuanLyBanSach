@@ -12,7 +12,8 @@ CREATE PROC proc_them_sach
 @tenSach NVARCHAR(50), @maLoaiSach INT, @tacGia NVARCHAR(50), @soLuong int, @giaBan int
 AS
 	BEGIN
-		INSERT INTO tbl_sach(ten_sach, ma_loai_sach, tac_gia, so_luong, gia_ban) VALUES(@tenSach, @maLoaiSach, @tacGia, @soLuong, @giaBan)
+		INSERT INTO tbl_sach(ten_sach, ma_loai_sach, tac_gia, so_luong, gia_ban)
+		VALUES(@tenSach, @maLoaiSach, @tacGia, @soLuong, @giaBan)
 	END
 
 CREATE PROC proc_cap_nhat_sach
@@ -20,7 +21,8 @@ CREATE PROC proc_cap_nhat_sach
 AS
 	BEGIN
 		UPDATE tbl_sach
-		SET ten_sach = @tenSach, ma_loai_sach = @maLoaiSach, tac_gia = @tacGia, so_luong = @soLuong, gia_ban = @giaBan
+		SET ten_sach = @tenSach, ma_loai_sach = @maLoaiSach,
+		tac_gia = @tacGia, so_luong = @soLuong, gia_ban = @giaBan
 		WHERE ma_sach = @maSach
 	END
 
@@ -86,7 +88,8 @@ CREATE PROC proc_them_hoa_don
 @ngayLapHoaDon DATETIME, @tenKhachHang NVARCHAR(50), @sdtKhachHang VARCHAR(10)
 AS
 	BEGIN
-		INSERT INTO tbl_hoa_don(ngay_lap_hoa_don,ten_khach_hang,sdt_khach_hang) VALUES (@ngayLapHoaDon,@tenKhachHang,@sdtKhachHang)
+		INSERT INTO tbl_hoa_don(ngay_lap_hoa_don,ten_khach_hang,sdt_khach_hang)
+		VALUES (@ngayLapHoaDon,@tenKhachHang,@sdtKhachHang)
 	END
 
 CREATE PROC proc_them_chi_tiet_phieu_nhap
