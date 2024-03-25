@@ -198,7 +198,7 @@
             this.textBookAuthor.BackColor = System.Drawing.Color.White;
             this.textBookAuthor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBookAuthor.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBookAuthor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
+            this.textBookAuthor.ForeColor = System.Drawing.Color.Black;
             this.textBookAuthor.Location = new System.Drawing.Point(716, 78);
             this.textBookAuthor.Name = "textBookAuthor";
             this.textBookAuthor.Size = new System.Drawing.Size(364, 39);
@@ -244,7 +244,7 @@
             // 
             this.textBookNameBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBookNameBook.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBookNameBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
+            this.textBookNameBook.ForeColor = System.Drawing.Color.Black;
             this.textBookNameBook.Location = new System.Drawing.Point(168, 6);
             this.textBookNameBook.Name = "textBookNameBook";
             this.textBookNameBook.Size = new System.Drawing.Size(912, 39);
@@ -353,7 +353,7 @@
             this.textBookTypeNameBookType.BackColor = System.Drawing.Color.White;
             this.textBookTypeNameBookType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBookTypeNameBookType.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBookTypeNameBookType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
+            this.textBookTypeNameBookType.ForeColor = System.Drawing.Color.Black;
             this.textBookTypeNameBookType.Location = new System.Drawing.Point(259, 31);
             this.textBookTypeNameBookType.Name = "textBookTypeNameBookType";
             this.textBookTypeNameBookType.Size = new System.Drawing.Size(912, 39);
@@ -490,7 +490,7 @@
             this.textBillNameCustomer.BackColor = System.Drawing.Color.White;
             this.textBillNameCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBillNameCustomer.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBillNameCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
+            this.textBillNameCustomer.ForeColor = System.Drawing.Color.Black;
             this.textBillNameCustomer.Location = new System.Drawing.Point(282, 76);
             this.textBillNameCustomer.Name = "textBillNameCustomer";
             this.textBillNameCustomer.Size = new System.Drawing.Size(423, 39);
@@ -501,7 +501,7 @@
             this.textPhoneCustomer.BackColor = System.Drawing.Color.White;
             this.textPhoneCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textPhoneCustomer.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPhoneCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
+            this.textPhoneCustomer.ForeColor = System.Drawing.Color.Black;
             this.textPhoneCustomer.Location = new System.Drawing.Point(983, 77);
             this.textPhoneCustomer.Name = "textPhoneCustomer";
             this.textPhoneCustomer.Size = new System.Drawing.Size(364, 39);
@@ -661,7 +661,7 @@
             this.textImportNameProvider.BackColor = System.Drawing.Color.White;
             this.textImportNameProvider.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textImportNameProvider.Font = new System.Drawing.Font("Bricolage Grotesque 24pt", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textImportNameProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(188)))), ((int)(((byte)(186)))));
+            this.textImportNameProvider.ForeColor = System.Drawing.Color.Black;
             this.textImportNameProvider.Location = new System.Drawing.Point(958, 3);
             this.textImportNameProvider.Name = "textImportNameProvider";
             this.textImportNameProvider.Size = new System.Drawing.Size(494, 39);
