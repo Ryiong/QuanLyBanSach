@@ -108,6 +108,7 @@
     <None Include="Resources\btn.jpg" />
     <None Include="Resources\label.jpg" />
     <None Include="Resources\label.png" />
+    <None Include="Resources\smallbtn.jpg" />
     <Content Include="SQL file\CreateTable.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
