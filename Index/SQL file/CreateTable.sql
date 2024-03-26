@@ -1,3 +1,4 @@
+CREATE DATABASE db_quan_ly_ban_sach;
 CREATE TABLE tbl_sach (
 	ma_sach INT IDENTITY NOT NULL,
 	ten_sach NVARCHAR(50),
